@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800;900&display=swap");
+
+:root {
+  font-family: Heebo, Assistant, Arial, sans-serif;
+  color: #14323a;
+  background: #f5fbff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100svh;
+  padding: max(18px, env(safe-area-inset-top)) 16px max(22px, env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.2) 34%, rgba(255, 255, 255, 0.12) 100%),
+    var(--background-mobile);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: min(100%, 430px);
+  padding: 22px 18px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: 0 22px 60px rgba(54, 105, 116, 0.18);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+
+.profile-logo {
+  width: min(66vw, 210px);
+  display: block;
+  margin: 0 auto 6px;
+  filter: drop-shadow(0 14px 24px rgba(37, 95, 107, 0.22));
+}
+
+.headline {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: #257b8a;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+}
+
+h1 {
+  margin: 0;
+  color: #112f37;
+  font-size: clamp(2rem, 9vw, 2.85rem);
+  line-height: 1.05;
+  font-weight: 950;
+}
+
+.sunglasses {
+  display: inline-block;
+  margin-inline-start: 6px;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: #41646c;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.links {
+  display: grid;
+  gap: 12px;
+}
+
+.link-button {
+  min-height: 64px;
+  padding: 9px 12px 9px 14px;
+  display: grid;
+  grid-template-columns: 50px 1fr 28px;
+  align-items: center;
+  gap: 12px;
+  color: #12323a;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+  box-shadow: 0 10px 24px rgba(59, 109, 119, 0.16), inset 4px 0 0 var(--accent);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(59, 109, 119, 0.22), inset 4px 0 0 var(--accent);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.link-button:active {
+  transform: scale(0.985);
+}
+
+.icon-wrap {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.icon-wrap img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.link-title {
+  font-size: 1.04rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.arrow {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #14323a;
+  direction: ltr;
+}
+
+.arrow svg {
+  width: 17px;
+  height: 17px;
+  stroke: currentColor;
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+@media (orientation: landscape), (min-width: 760px) {
+  .page {
+    background-image:
+      radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.16) 42%, rgba(255, 255, 255, 0.1) 100%),
+      var(--background-desktop);
+  }
+}
+
+@media (min-width: 760px) {
+  .card {
+    padding: 26px 24px 22px;
+  }
+}
+
+@media (max-height: 720px) {
+  .page {
+    align-items: flex-start;
+  }
+
+  .profile-logo {
+    width: min(52vw, 155px);
+  }
+
+  .link-button {
+    min-height: 58px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .page {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: min(100%, 760px);
+    padding: 14px;
+    border-radius: 24px;
+  }
+
+  .profile-logo {
+    width: 110px;
+    margin-bottom: 2px;
+  }
+
+  .headline {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .links {
+    gap: 8px;
+  }
+
+  .link-button {
+    min-height: 50px;
+    grid-template-columns: 42px 1fr 26px;
+  }
+
+  .icon-wrap {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+
+  .icon-wrap img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-button {
+    transition: none;
+  }
+}
