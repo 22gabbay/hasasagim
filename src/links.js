@@ -5,6 +5,12 @@ import tiktokIcon from "./assets/icon-tiktok.webp";
 import recycleBinIcon from "./assets/icon-recycle-bin.webp";
 
 export const links = [
+{
+  title: "תצביעו לנו בתחרות של תמיר מיחזור!",
+  url: "https://recyclehit.co.il",
+  icon: recycleBinIcon,
+  accent: "#ff8a00",
+},
   {
     title: "לערוץ הוואטסאפ שלנו",
     url: "https://whatsapp.com/channel/0029Vb8T3v0HQbSCc3unxC1j",
@@ -41,10 +47,4 @@ export const links = [
     icon: tiktokIcon,
     accent: "#00d5e9",
   },
-{
-  title: "תצביעו לנו בתחרות של תמיר מיחזור!",
-  url: "https://recyclehit.co.il",
-  icon: recycleBinIcon,
-  accent: "#ff8a00",
-},
 ];
