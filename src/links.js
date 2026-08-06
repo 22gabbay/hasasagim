@@ -2,6 +2,7 @@ import whatsappIcon from "./assets/icon-whatsapp.webp";
 import youtubeIcon from "./assets/icon-youtube.webp";
 import instagramIcon from "./assets/icon-instagram.webp";
 import tiktokIcon from "./assets/icon-tiktok.webp";
+import recycleBinIcon from "./assets/icon-recycle-bin.webp";
 
 export const links = [
   {
@@ -40,4 +41,10 @@ export const links = [
     icon: tiktokIcon,
     accent: "#00d5e9",
   },
+{
+  title: "תצביעו לנו בתחרות של תמיר מיחזור!",
+  url: "https://recyclehit.co.il",
+  icon: recycleBinIcon,
+  accent: "#ff8a00",
+},
 ];
