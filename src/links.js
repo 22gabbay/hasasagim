@@ -6,7 +6,7 @@ import recycleBinIcon from "./assets/icon-recycle-bin.webp";
 
 export const links = [
 {
-  title: "תצביעו לנו בתחרות של תמיר מיחזור!",
+  title: "תצביעו לנו בתחרות של תמיר מיחזור! (קבוצה מספר 3)",
   url: "https://recyclehit.co.il",
   icon: recycleBinIcon,
   accent: "#ff8a00",
