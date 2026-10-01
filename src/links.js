@@ -3,8 +3,15 @@ import youtubeIcon from "./assets/icon-youtube.webp";
 import instagramIcon from "./assets/icon-instagram.webp";
 import tiktokIcon from "./assets/icon-tiktok.webp";
 import recycleBinIcon from "./assets/icon-recycle-bin.webp";
+import skwishimIcon from "./assets/icon-skwishim.webp";
 
 export const links = [
+  {
+    title: "כרטיסים לאירוע שלנו בחנוכה (עם סיכום הטרנדים השנתי!!)",
+    url: "https://tm.ticketmaster.co.il/s/squashy-noyagabay",
+    icon: skwishimIcon,
+    accent: "#00d5e9",
+  },
   {
     title: "לערוץ הוואטסאפ שלנו",
     url: "https://whatsapp.com/channel/0029Vb8T3v0HQbSCc3unxC1j",
